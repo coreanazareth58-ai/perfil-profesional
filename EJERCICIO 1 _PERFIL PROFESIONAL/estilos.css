@@ -1,0 +1,270 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #333333;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   ENCABEZADO
+================================ */
+
+.encabezado {
+    background-color: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.encabezado h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.encabezado p {
+    font-size: 20px;
+}
+
+
+/* ================================
+   PERFIL
+================================ */
+
+.perfil {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* IMAGEN */
+
+.imagen-perfil img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid #1f4e79;
+}
+
+
+/* INFORMACIÓN */
+
+.informacion {
+    flex: 1;
+}
+
+.informacion h2 {
+    color: #1f4e79;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.informacion h3 {
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   SECCIONES
+================================ */
+
+.seccion {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.seccion h2 {
+    color: #1f4e79;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ================================
+   LISTA DE HABILIDADES
+================================ */
+
+.seccion ul {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.seccion li {
+    margin-bottom: 10px;
+}
+
+
+/* ================================
+   SERVICIOS
+================================ */
+
+.tarjetas {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    width: 280px;
+
+    background-color: #eef5fb;
+
+    padding: 25px;
+
+    border: 2px solid #d0e2f2;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.tarjeta h3 {
+    color: #1f4e79;
+    margin-bottom: 10px;
+}
+
+
+/* EFECTO HOVER */
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+
+    background-color: #dcecf9;
+}
+
+
+/* ================================
+   CONTACTO
+================================ */
+
+.contacto {
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+}
+
+.contacto h2 {
+    color: #1f4e79;
+    margin-bottom: 20px;
+}
+
+.contacto p {
+    margin-bottom: 8px;
+}
+
+
+/* ENLACE */
+
+.contacto a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    padding: 12px 25px;
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+}
+
+.contacto a:hover {
+    background-color: #163a5c;
+}
+
+
+/* ================================
+   PIE DE PÁGINA
+================================ */
+
+footer {
+    margin-top: 40px;
+
+    padding: 25px;
+
+    background-color: #1f4e79;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+/* ================================
+   DISEÑO RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .perfil {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imagen-perfil img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .encabezado h1 {
+        font-size: 32px;
+    }
+
+    .tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
